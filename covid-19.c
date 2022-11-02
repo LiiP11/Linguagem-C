@@ -124,7 +124,7 @@ int main() {
 				system("clear");
 			break;
 		}
-	} while (op!=4);
+	} while (op != 4);
 
 	getchar();
 	return 0;
