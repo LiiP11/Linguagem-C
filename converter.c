@@ -7,12 +7,12 @@ int main() {
 	int op;
 
 	printf("==========================\n");
-    printf("\tCONVERTER\n");
-    printf("==========================\n");
-    printf("1 - Kilograms\t2 - Pounds\n");
-    printf("\nChoose an option: ");
-    scanf("%d",&op);
-    system("clear");
+	printf("\tCONVERTER\n");
+	printf("==========================\n");
+	printf("1 - Kilograms\t2 - Pounds\n");
+	printf("\nChoose an option: ");
+	scanf("%d",&op);
+	system("clear");
 
 	switch (op) {
 		case 1:
