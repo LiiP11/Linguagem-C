@@ -6,7 +6,7 @@ float media(float a,float b) {
 	return m;
 }
 
-int main(){
+int main() {
 	float n1,n2;
 
 	printf("Digite a 1° nota:");

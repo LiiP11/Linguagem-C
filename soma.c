@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char* argv[]){
+int main(int argc, char* argv[]) {
 	int n1,n2,s;
 
 	printf("Digite um numero: ");

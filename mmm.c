@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-float mean(float a[],int n){
+float mean(float a[],int n) {
 	int i,j;
 	float tot = 0;
 	float mean = 0;
 
-	for ( i = 0; i < n; i++){
-		for (j = 0; i < n; i++){
+	for ( i = 0; i < n; i++) {
+		for (j = 0; i < n; i++) {
 			tot = tot + a[i];
 		}
 	}
@@ -15,13 +15,13 @@ float mean(float a[],int n){
 	return mean;
 }
 
-float median(float a[],int n){  
+float median(float a[],int n) {  
 	float median = 0;
 	int aux,i,j;
 
-	for ( i = 0; i < n; i++){
-		for ( j = i+1; j < n; j++){
-			if (a[i] > a[j]){
+	for ( i = 0; i < n; i++) {
+		for ( j = i+1; j < n; j++) {
+			if (a[i] > a[j]) {
 				aux = a[i];
 				a[i] = a[j];
 				a[j] = aux;
@@ -54,20 +54,20 @@ float median(float a[],int n){
 	return median;
 }
 
-float mode(float a[],int n){
+float mode(float a[],int n) {
 	int mode = 0; 
 	int maxcont = 0; 
 	int i, j;
 	
-	for (i = 0; i < n; i++){
+	for (i = 0; i < n; i++) {
 		int cont = 0;
 		
-		for (j = 0; j < n; j++){
+		for (j = 0; j < n; j++) {
 			if (a[j] == a[i])
 				cont++;
 		}
 
-		if (cont > maxcont){
+		if (cont > maxcont) {
 			maxcont = cont;
 			mode = a[i];
 		}
@@ -75,7 +75,7 @@ float mode(float a[],int n){
 	return mode;
 }
 
-int main(){
+int main() {
 	int i;
 	float vetor[8]; //change the value if you want to test with other numbers.
 	int maxvetor=8; //change the value if you want to test with other numbers.
@@ -84,7 +84,7 @@ int main(){
 	printf(" MEAN MEDIAN MODE \n");
 	printf("====================\n");
 
-	for (i = 0; i < maxvetor; i++){
+	for (i = 0; i < maxvetor; i++) {
 		printf("%d° number: ",i+1);
 		scanf("%f",&vetor[i]);
 	}

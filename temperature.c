@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(){
+int main() {
     
     float celsius,fahreneit,conv;
     int op;
@@ -14,7 +14,7 @@ int main(){
     scanf("%d",&op);
     system("clear");
         
-    switch(op){
+    switch(op) {
         case 1:
             printf("Enter the temperature in degrees Celsius: ");
             scanf("%f",&celsius);

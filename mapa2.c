@@ -3,25 +3,25 @@
 #include <stdlib.h>
 #include <string.h>
 
-void bufferClean(){
+void bufferClean() {
 	char c;
 	while((c = getchar()) != '\n' && c != EOF);
 }
 
-	struct cadastro{
-		int codigo;
-		char nome[30];
-		char cpf[15];
-		char vacina[30];
-		char data[15];
-		char lote[15];
-	}paciente[99];
+struct cadastro {
+	int codigo;
+	char nome[30];
+	char cpf[15];
+	char vacina[30];
+	char data[15];
+	char lote[15];
+}paciente[99];
 
-int main(){
+int main() {
 	int i,qtd,op,found;
 	char pesquisa[15];
 	
-	do{
+	do {
 		
 		printf("=======================================\n");
 		printf("\tCADASTRO DE VACINAS\n");
@@ -36,13 +36,13 @@ int main(){
 		bufferClean();
 		system("clear");
 		
-		switch (op){
+		switch (op) {
 			case 1:
 				printf("Deseja fazer quantos cadastros: ");
 				scanf("%d",&qtd);
 				bufferClean();
 
-				for (i = 0; i < qtd; i++){
+				for (i = 0; i < qtd; i++) {
 					printf("=======================\n");
 					printf("Codigo: %d\n",i+1);
 					printf("=======================\n");
@@ -71,7 +71,7 @@ int main(){
 			break;
 
 			case 2:
-				for (i = 0; i < qtd; i++){
+				for (i = 0; i < qtd; i++) {
 					printf("=======================\n");
 					printf("Codigo: %d\n",i+1);
 					printf("=======================\n");
@@ -90,7 +90,7 @@ int main(){
 				printf("Informe o CPF:");
 				scanf("%s",pesquisa);
 				found=0;
-				for (i = 0; i < qtd; i++){
+				for (i = 0; i < qtd; i++) {
 					if (strcmp(pesquisa,paciente[i].cpf)==0){
 						bufferClean();
 						printf("=======================\n");
@@ -106,7 +106,7 @@ int main(){
 					}
 				}
 
-				if(!strcmp(pesquisa,paciente[found].cpf)==0){
+				if(!strcmp(pesquisa,paciente[found].cpf)==0) {
 					printf("\nCPF Invalido!\n");
 					getchar();
 				}	
@@ -119,12 +119,12 @@ int main(){
 			break;
 
 			default:
-				printf("Opcao invalida!\n");
+				printf("Opçao invalida!\n");
 				getchar();
 				system("clear");
 			break;
 		}
-	}while (op!=4);
+	} while (op!=4);
 
 	getchar();
 	return 0;
