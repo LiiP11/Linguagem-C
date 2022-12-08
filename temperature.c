@@ -21,7 +21,7 @@ int main() {
 
             conv = celsius * 1.8 + 32;
 
-            printf("\nCelsius: %.1f C\nFahreneit: %.1f F\n",celsius,conv);
+            printf("\nCelsius: %.1f °C\nFahreneit: %.1f °F\n",celsius,conv);
         break;
 
         case 2:
@@ -30,7 +30,7 @@ int main() {
 
             conv = (fahreneit-32) / 1.8;
     
-            printf("\nFahreneit: %.1f F\nCelsius: %.1f C\n",fahreneit,conv);
+            printf("\nFahreneit: %.1f °F\nCelsius: %.1f °C\n",fahreneit,conv);
         break;
     }
     getchar();

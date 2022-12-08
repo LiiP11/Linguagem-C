@@ -19,10 +19,8 @@ struct cadastro {
 
 int main() {
 	int i,qtd,op,found;
-	char pesquisa[15];
-	
+
 	do {
-		
 		printf("=======================================\n");
 		printf("\tCADASTRO DE VACINAS\n");
 		printf("=======================================\n");
@@ -35,7 +33,7 @@ int main() {
 		scanf("%d",&op);
 		bufferClean();
 		system("clear");
-		
+
 		switch (op) {
 			case 1:
 				printf("Deseja fazer quantos cadastros: ");
@@ -87,9 +85,11 @@ int main() {
 			break;
 
 			case 3:
-				printf("Informe o CPF:");
+				char pesquisa[15];
+				printf("Informe o CPF: ");
 				scanf("%s",pesquisa);
 				found=0;
+
 				for (i = 0; i < qtd; i++) {
 					if (strcmp(pesquisa,paciente[i].cpf)==0){
 						bufferClean();
@@ -129,5 +129,3 @@ int main() {
 	getchar();
 	return 0;
 }
-
-
