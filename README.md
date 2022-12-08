@@ -1,2 +1,2 @@
 # Linguagem C
- Faculdade
+ Exercícios da Faculdade
