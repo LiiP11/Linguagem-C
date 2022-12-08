@@ -7,7 +7,7 @@ int main() {
 
 	printf("Type three ramdom names:\n\n");
 
-	for (i = 0; i < 3; i++){
+	for (i = 0; i < 3; i++) {
 		printf("%d° name: ",i+1);
 		scanf("%s", name[i]);
 	}

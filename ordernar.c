@@ -10,7 +10,7 @@ int main() {
 	}
 
 	for ( i = 0; i < 4; i++) {
-		for ( j = i+1; j < 5; j++) {
+		for ( j = i + 1; j < 5; j++) {
 			if (vetor[i] > vetor[j]) {
 				aux = vetor[i];
 				vetor[i] = vetor[j];
