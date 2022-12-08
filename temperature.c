@@ -2,7 +2,6 @@
 #include <stdlib.h>
 
 int main() {
-    
     float celsius,fahreneit,conv;
     int op;
 
