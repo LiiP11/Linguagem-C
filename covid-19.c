@@ -91,7 +91,7 @@ int main() {
 				found=0;
 
 				for (i = 0; i < qtd; i++) {
-					if (strcmp(pesquisa,paciente[i].cpf)==0){
+					if (strcmp(pesquisa,paciente[i].cpf) == 0){
 						bufferClean();
 						printf("=======================\n");
 						printf("Codigo: %d\n",i+1);
@@ -106,7 +106,7 @@ int main() {
 					}
 				}
 
-				if(!strcmp(pesquisa,paciente[found].cpf)==0) {
+				if(!strcmp(pesquisa,paciente[found].cpf) == 0) {
 					printf("\nCPF Invalido!\n");
 					getchar();
 				}	
