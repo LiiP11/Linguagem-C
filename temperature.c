@@ -12,7 +12,7 @@ int main() {
     printf("\nChoose an option: ");
     scanf("%d",&op);
     system("clear");
-        
+
     switch(op) {
         case 1:
             printf("Enter the temperature in degrees Celsius: ");
@@ -28,11 +28,11 @@ int main() {
             scanf("%f",&fahreneit);
 
             conv = (fahreneit-32) / 1.8;
-    
+
             printf("\nFahreneit: %.1f °F\nCelsius: %.1f °C\n",fahreneit,conv);
         break;
     }
-    
+
     getchar();
     return 0;
 }
