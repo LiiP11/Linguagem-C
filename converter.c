@@ -2,7 +2,6 @@
 #include <stdlib.h>
 
 int main() {
-	
 	float pound,kg,conv;
 	int op;
 
@@ -33,7 +32,6 @@ int main() {
 			printf("\nPound: %.1f Lbs\nKilogram: %.1f Kg\n",pound,conv);
 		break;
 	}
-	
 	getchar();
 	return 0;
-}	
+}
