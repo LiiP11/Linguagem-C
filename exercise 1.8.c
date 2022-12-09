@@ -3,14 +3,14 @@
 
 int main() {
     int c, lines, tab, blank;
-	char frase[50];
+	char phrase[50];
 
     lines = 0;
     tab = 0;
     blank = 0;
 
-	printf("Escreva uma frase: ");
-	scanf("%s", &frase);
+	printf("Write a sentence: ");
+	scanf("%s", &phrase);
 
     while ( (c = getchar()) != EOF) {
         if (c == '\n')
@@ -24,6 +24,6 @@ int main() {
     }
 
 	/*Pressione "CTRL + D" para exibir o contador*/
-    printf("\nliness: %d\nTabs: %d\nBlanks: %d\n", lines, tab, blank);
+    printf("\nlines: %d\nTabs: %d\nBlanks: %d\n", lines, tab, blank);
     return 0;
 }
