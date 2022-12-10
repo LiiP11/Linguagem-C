@@ -42,7 +42,7 @@ int main() {
 
 				for (i = 0; i < qtd; i++) {
 					printf("=======================\n");
-					printf("Codigo: %d\n",i+1);
+					printf("Codigo: %d\n",i + 1);
 					printf("=======================\n");
 					printf("Digite o nome: ");
 					scanf("%s[^\n]",paciente[i].nome);
@@ -71,7 +71,7 @@ int main() {
 			case 2:
 				for (i = 0; i < qtd; i++) {
 					printf("=======================\n");
-					printf("Codigo: %d\n",i+1);
+					printf("Codigo: %d\n",i + 1);
 					printf("=======================\n");
 					printf("Nome: %s\n",paciente[i].nome);
 					printf("CPF: %s\n",paciente[i].cpf);
@@ -88,7 +88,7 @@ int main() {
 				char pesquisa[15];
 				printf("Informe o CPF: ");
 				scanf("%s",pesquisa);
-				found=0;
+				found = 0;
 
 				for (i = 0; i < qtd; i++) {
 					if (strcmp(pesquisa,paciente[i].cpf) == 0){
@@ -102,7 +102,7 @@ int main() {
 						printf("Data: %s\n",paciente[i].data);
 						printf("Lote: %s\n",paciente[i].lote);
 						printf("=======================\n");
-						found=i;					
+						found = i;					
 					}
 				}
 
