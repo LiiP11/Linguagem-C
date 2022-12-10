@@ -22,7 +22,6 @@ int main() {
             ++blank;
     }
 
-	/* Press "CTRL + D" to display the o counter */
     printf("\nlines: %d\nTabs: %d\nBlanks: %d\n", lines, tab, blank);
     return 0;
 }
