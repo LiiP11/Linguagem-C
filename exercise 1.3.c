@@ -6,9 +6,9 @@ int main(int argc, char* argv[]) {
 	int fahr, celsius;
 	int lower, upper, step;
 
-	lower = 0;		/* lower limit of temperature scale */
+	lower = 0;	/* lower limit of temperature scale */
 	upper = 200;	/* upper limit */
-	step = 20; 		/* step size */  
+	step = 20; 	/* step size */  
 	fahr = lower;  
 
 	printf("F°\t C°\n");
